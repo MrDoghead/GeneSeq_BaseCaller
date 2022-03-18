@@ -34,17 +34,17 @@ python setup.py develop
 
 ```bash
 # to download ont data
-python bonito/download.py --training --data_dir /PATH/TO/SAVE/DATASETs/ 
+python bonito/download.py --training --data_dir /workspace/datasets/ 
 
 # to download ont models
 python bonito/download.py --model --show
-python bonito/download.py --model --model_dir /PATH/TO/SAVE/MODELS/ 
+python bonito/download.py --model --model_dir /workspace/model_bin/
 ```
 
 If you have your own hdf5 file, then convert it to numpy data directly.
 
 ```bash
-python bonito/convert.py /PATH/TO/HDF5/ /PATH/TO/SAVE/
+python bonito/convert.py /workspace/datasets/*.fast5 /workspace/datasets/
 ```
 
 ### To train your own model or evaluation
