@@ -26,6 +26,8 @@ docker image build -t lt_basecaller:0.1 . -f Dockerfile
 # create container and run
 docker run --gpus all -p 8899:8899 --name basecaller_dev --ipc=host -it -v /workspace/GeneSeq_BaseCaller:/workspace/GeneSeq_BaseCaller lt_basecaller:0.1
 
+cd GeneSeq_BaseCaller
+
 # setup
 python setup.py develop
 ```

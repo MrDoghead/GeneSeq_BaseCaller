@@ -5,4 +5,4 @@ RUN pip3 install torch==1.10.1+cu113 torchvision==0.11.2+cu113 torchaudio==0.10.
 
 COPY requirements.txt .
 RUN pip3 install -r requirements.txt
-RUN apt update && apt install samtools, hdf5-tools
+RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y samtools hdf5-tools
