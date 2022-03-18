@@ -17,8 +17,7 @@ from bonito.utils.multiprocessing import process_cancel, process_itemmap
 from bonito.utils.util import column_to_set, load_symbol, load_model, init
 
 #os.environ['CUDA_LAUNCH_BLOCKING'] = '1'
-os.environ['CUDA_VISIBLE_DEVICES'] = "3"
-
+#os.environ['CUDA_VISIBLE_DEVICES'] = '0'
 
 def main(args):
 
